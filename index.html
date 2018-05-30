@@ -24,7 +24,7 @@
 	<div id="mapid"></div>
 	<script>
 
-	var mymap = L.map('mapid').setView([32.27,-28.65],3);
+	var mymap = L.map('mapid').setView([30.284,-97.736],12);
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib2JtZ2lzIiwiYSI6ImNqZWZ6MmZpczFtNGgyeG9kM3p4NTdjNmsifQ.HQ3o72yFNd8bXl_UpSs9wQ', {
 	maxZoom: 18,
@@ -35,25 +35,10 @@
 	}).addTo(mymap);
 
 
-	L.marker([39.964912, 4.119764]).addTo(mymap)
-	.bindPopup("<b>Hello world!</b><br />GIS Field Technican").openPopup();
+	L.marker([30.284,-97.736]).addTo(mymap)
+	.bindPopup("<b>Hello world!</b><br />Testing").openPopup();
 
 
-	L.marker([32.685837, -117.118378]).addTo(mymap)
-	.bindPopup("<b>Hello world!</b><br />Esri Intern").openPopup();
-
-
-
-	L.marker([18.250115, -66.049805]).addTo(mymap)
-	.bindPopup("<b>Hello world!</b><br />GIS Analyst Intern").openPopup();
-
-
-	L.marker([25.048747, 55.513916]).addTo(mymap)
-	.bindPopup("<b>Hello world!</b><br />GIS Field Technican").openPopup();
-
-
-	L.marker([18.412463, -66.050025]).addTo(mymap)
-	.bindPopup("<b>Hello world!</b><br />GIS Intern").openPopup();
 
 
 
