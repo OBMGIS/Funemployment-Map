@@ -35,12 +35,27 @@
 	}).addTo(mymap);
 
 
-	L.marker([30.284,-97.736]).addTo(mymap)
-	.bindPopup("<b>Hello world!</b><br />Testing").openPopup();
+	L.marker([30.261,-97.758]).addTo(mymap)
+	.bindPopup("<b>Barton Springs Saloon</b><br /> Wednesday: $1 Keystone Light All Day").openPopup();
 
 
+  L.marker([30.248,-97.771]).addTo(mymap)
+	.bindPopup("<b>Black Sheep Lodge</b><br /> Monday: $3 TX Pints and TX Liquors <br />  Tuesday: $2 MexiCANS & $2 Tequila Shots and Drinks <br />  Wednesday:  $1 White Trash Cans 4$ Deep Eddy Vodka <br /> Saturday: 3$ Well drinks, $2 White Trash Cans  <br /> Sundays: $2 Off Pitchers $3 Sangria $3 Bloody Marys <br /> SPECIALS RUN ALL DAY  " ).openPopup();
+
+  L.marker([30.292,-97.827]).addTo(mymap)
+	.bindPopup("<b>Kirby Lane Cafe</b><br /> Monday-Friday: $3 Local Drafts ").openPopup();
 
 
+  var myIcon = L.icon({
+      iconUrl: 'C:\Users\Choli\Documents\Funemployment Map\Funemployment-Map\beer.png',
+      iconSize: [38, 95],
+      iconAnchor: [22, 94],
+      popupAnchor: [-3, -76],
+      shadowUrl: 'C:\Users\Choli\Documents\Funemployment Map\Funemployment-Map\beershadow.png',
+      shadowSize: [68, 95],
+      shadowAnchor: [22, 94]
+  });
+  L.marker([30.27, -97.71], {icon: myIcon}).addTo(mymap);
 
 
 
