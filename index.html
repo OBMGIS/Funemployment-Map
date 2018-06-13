@@ -35,32 +35,34 @@
 	}).addTo(mymap);
 
 
-	L.marker([30.261,-97.758]).addTo(mymap)
-	.bindPopup("<b>Barton Springs Saloon</b><br /> Wednesday: $1 Keystone Light All Day").openPopup();
 
-
-  L.marker([30.248,-97.771]).addTo(mymap)
-	.bindPopup("<b>Black Sheep Lodge</b><br /> Monday: $3 TX Pints and TX Liquors <br />  Tuesday: $2 MexiCANS & $2 Tequila Shots and Drinks <br />  Wednesday:  $1 White Trash Cans 4$ Deep Eddy Vodka <br /> Saturday: 3$ Well drinks, $2 White Trash Cans  <br /> Sundays: $2 Off Pitchers $3 Sangria $3 Bloody Marys <br /> SPECIALS RUN ALL DAY  " ).openPopup();
 
   L.marker([30.292,-97.827]).addTo(mymap)
 	.bindPopup("<b>Kirby Lane Cafe</b><br /> Monday-Friday: $3 Local Drafts ").openPopup();
 
 
   var myIcon = L.icon({
-      iconUrl: 'https://github.com/OBMGIS/Funemployment-Map/blob/master/images/beer.png',
+      iconUrl: 'images/beer.svg',
       iconSize: [38, 95],
       iconAnchor: [22, 94],
       popupAnchor: [-3, -76],
-      shadowUrl: 'https://github.com/OBMGIS/Funemployment-Map/blob/master/images/beershadow.png',
+      shadowUrl: '',
       shadowSize: [68, 95],
       shadowAnchor: [22, 94]
   });
-  L.marker([30.27, -97.71], {icon: myIcon}).addTo(mymap);
+  L.marker([30.261, -97.758], {icon: myIcon}).addTo(mymap)
+  .bindPopup("<b>Barton Springs Saloon</b><br /> Wednesday: $1 Keystone Light All Day").openPopup();
+
+  L.marker([30.248,-97.771]).addTo(mymap)
+	.bindPopup("<b>Black Sheep Lodge</b><br /> Monday: $3 TX Pints and TX Liquors <br />  Tuesday: $2 MexiCANS & $2 Tequila Shots and Drinks <br />  Wednesday:  $1 White Trash Cans 4$ Deep Eddy Vodka <br /> Saturday: 3$ Well drinks, $2 White Trash Cans  <br /> Sundays: $2 Off Pitchers $3 Sangria $3 Bloody Marys <br /> SPECIALS RUN ALL DAY  " ).openPopup();
 
 
 
-	var popup = L.popup();
 
+
+
+
+  var popup = L.popup();
 	function onMapClick(e) {
 	popup
 	.setLatLng(e.latlng)
